@@ -1,0 +1,73 @@
+* {
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+}
+
+.Nav {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+}
+.Nav a {
+  background-color: #232D3F;
+  padding: 10px;
+  border-radius: 3%;
+
+}
+
+#Today {
+  border: 1px solid #008170;
+}
+
+.Config {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: White;
+  font-weight: bold;
+  margin: 2% 5%;
+  margin-left: 400px;
+  padding: 10px;
+  border: 1px solid #005B41;
+  background-color: #232D3F;
+  cursor: pointer;
+  opacity: 0.2;
+  transition: ease-in-out 0.5s;
+  height: 2.5rem;
+}
+
+.Config:hover {
+  opacity: 1;
+}
+
+#config, #config:focus{
+  width: 95%;
+  min-width: 400px;
+  height: fit-content;
+  min-height: 90vh;
+  background: transparent;
+  border: none;
+  padding: 30px;
+  resize: none;
+  line-height: 1.5rem;
+  outline: none;
+  margin-left: 5%;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}

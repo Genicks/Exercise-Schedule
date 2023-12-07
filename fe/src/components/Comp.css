@@ -1,0 +1,64 @@
+.Days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.UI {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.Days h1 {
+  text-align: center;
+  width: 100%;
+  min-width: 400px;
+}
+
+.Days Img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.Exercise {
+  display: flex;
+  background-color: #232D3F;
+  width: 90%;
+  justify-content: space-between;
+  padding: 0 10%;
+  margin: 5px 0;
+}
+
+.Workout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkbox {
+  width: 30px;
+}
+
+.btn {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  color: white;
+  font-weight: bold;
+  margin: 2% 5%;
+  padding: 10px;
+  border: 1px solid #005B41;
+  background-color: #232D3F;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  height: 2.5rem;
+}
+
+.btn:disabled {
+  background-color: #555; 
+  border-color: #777;
+  cursor: not-allowed; 
+  opacity: 0.6; 
+}
