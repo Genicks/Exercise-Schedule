@@ -13,7 +13,7 @@ const Sun = (props) => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const req = await fetch(`http://localhost:4000/${day_Abb}`);
+        const req = await fetch(`https://exercise-data.onrender.com/${day_Abb}`);
         const data = await req.json();
         if (data.workout === "rest") {
           setRest(true);

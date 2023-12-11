@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const req = await fetch("http://localhost:4000");
+        const req = await fetch("https://exercise-data.onrender.com/");
         const data = await req.json();
         setData(data);
       } catch (err) {

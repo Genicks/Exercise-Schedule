@@ -1,2 +1,0 @@
--Add code highlighthing
--Add nav indication of location

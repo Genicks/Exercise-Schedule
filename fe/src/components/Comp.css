@@ -95,7 +95,7 @@
   background-color: #232D3F;
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   border: 1px solid #005B41 ;
 }
