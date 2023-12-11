@@ -29,39 +29,43 @@
   border: 1px solid #008170;
 }
 
-.Config {
-  position: absolute;
+.ConfigBtnCon {
+  width: 100%;
+  position: sticky;
   bottom: 0;
-  right: 0;
+  display: flex;
+  justify-content: right;
+}
+
+.ConfigBtn {
+  position: sticky;
+  margin: 2% 5%;
   color: White;
   font-weight: bold;
-  margin: 2% 5%;
   margin-left: 400px;
   padding: 10px;
-  border: 1px solid #005B41;
-  background-color: #232D3F;
+  border: 1px solid #008170;
+  background-color: #005B41;
   cursor: pointer;
   opacity: 0.2;
   transition: ease-in-out 0.5s;
   height: 2.5rem;
 }
 
-.Config:hover {
+.ConfigBtn:hover {
   opacity: 1;
 }
 
 #config, #config:focus{
-  width: 95%;
+  width: 90%;
   min-width: 400px;
-  height: fit-content;
+  height: 200vh;
   min-height: 90vh;
   background: transparent;
-  border: none;
-  padding: 30px;
   resize: none;
-  line-height: 1.5rem;
+  line-height: 20px;
   outline: none;
-  margin-left: 5%;
+  border: none;
 }
 
 ::-webkit-scrollbar {
