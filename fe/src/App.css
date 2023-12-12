@@ -58,7 +58,7 @@
 
 #config, #config:focus{
   width: 90%;
-  height: 100vh;
+  height: 80vh;
   background: transparent;
   resize: none;
   line-height: 20px;
