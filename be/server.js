@@ -9,7 +9,7 @@ app.use(cors());
 // *Read json data from files
 const readFile = () => {
   return new Promise((resolve, reject) => {
-    fs.readFile("../Update/data.json", "utf8", (err, jdata) => {
+    fs.readFile(".data.json", "utf8", (err, jdata) => {
       if (err) {
         console.error("Error reading the file:", err);
         reject(err);
