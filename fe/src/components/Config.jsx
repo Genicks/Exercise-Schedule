@@ -88,7 +88,6 @@ const Config = (props) => {
 
       <div className="codeCon">
         <div className="codeEditor">
-          <LinesOfCode lines={lines} classC="codeEditorLines" />
           <textarea
             name="config"
             id="config"
