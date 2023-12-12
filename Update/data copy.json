@@ -1,0 +1,56 @@
+[
+  {
+    "days": [
+      "MON",
+      "TUE",
+      "FRI",
+      "SAT"
+    ],
+    "exercises": [
+      {
+        "name": "HS/PIKE push-up",
+        "reps": 50,
+        "sets": 5
+      },
+      {
+        "name": "Pull-ups",
+        "reps": 5,
+        "sets": 5
+      },
+      {
+        "name": "Chin-ups",
+        "reps": 5,
+        "sets": 3
+      },
+      {
+        "name": "Leg Raises",
+        "reps": 5,
+        "sets": 3
+      }
+    ]
+  },
+  {
+    "days": [
+      "WED",
+      "THU",
+      "SUN"
+    ],
+    "exercises": [
+      {
+        "name": "Incline Push-up",
+        "reps": 10,
+        "sets": 5
+      },
+      {
+        "name": "Barbell Squats",
+        "reps": 15,
+        "sets": 3
+      },
+      {
+        "name": "Bicep Curls",
+        "reps": 10,
+        "sets": 3
+      }
+    ]
+  }
+]

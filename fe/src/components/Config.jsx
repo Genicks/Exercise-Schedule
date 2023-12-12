@@ -36,6 +36,7 @@ const Config = (props) => {
   const handleButtonClick = () => {
     axios
       .post("https://exercise-data.onrender.com/config", { textAreaContent })
+      // .post("http://localhost:4000/config", { textAreaContent })
       .then(() => {
         window.location.reload();
       })

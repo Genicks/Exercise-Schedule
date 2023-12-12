@@ -1,56 +1,195 @@
 [
   {
-    "days": [
-      "MON",
-      "TUE",
-      "FRI",
-      "SAT"
-    ],
-    "exercises": [
-      {
-        "name": "HS/PIKE push-up",
-        "reps": 50,
-        "sets": 5
-      },
-      {
-        "name": "Pull-ups",
-        "reps": 5,
-        "sets": 5
-      },
-      {
-        "name": "Chin-ups",
-        "reps": 5,
-        "sets": 3
-      },
-      {
-        "name": "Leg Raises",
-        "reps": 5,
-        "sets": 3
+    "schedule": {
+        "days": [
+            { "Name": "SUN", "activity": "Rest" },
+            { "Name": "MON", "activity": "Cardio" },
+            { "Name": "TUE", "activity": "Push" },
+            { "Name": "WED", "activity": "Full-body" },
+            { "Name": "THU", "activity": "Pull" },
+            { "Name": "FRI", "activity": "Cardio" },
+            { "Name": "SAT", "activity": "" }
+          ],
+      "categories": {
+        "Full-body": [
+          {
+            "Exercise": "HS/PIKE push-up",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Shoulder",
+            "Type": "Push"
+          },
+          {
+            "Exercise": "Pull-ups",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Back",
+            "Type": "Pull"
+          },
+          {
+            "Exercise": "Chin-ups",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Biceps",
+            "Type": "Pull"
+          },
+          {
+            "Exercise": "Leg Raises",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Abdomen",
+            "Type": "Legs"
+          },
+          {
+            "Exercise": "Dips",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Chest",
+            "Type": "Push"
+          },
+          {
+            "Exercise": "Decline Push-up",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Chest",
+            "Type": "Push"
+          },
+          {
+            "Exercise": "Barbell Squats",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Legs",
+            "Type": "Legs"
+          },
+          {
+            "Exercise": "Bicep Curls",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Biceps",
+            "Type": "Pull"
+          }
+        ],
+        "Push": [
+          {
+            "Exercise": "HS/PIKE push-up",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Shoulder",
+            "Type": "Push"
+          },
+          {
+            "Exercise": "Incline Push-up",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Chest",
+            "Type": "Push"
+          },
+          {
+            "Exercise": "Dips",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Chest",
+            "Type": "Push"
+          },
+          {
+            "Exercise": "Bicep Curls",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Biceps",
+            "Type": "Pull"
+          },
+          {
+            "Exercise": "Leg Raises",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Abdomen",
+            "Type": "Legs"
+          },
+          {
+            "Exercise": "Barbell Squats",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Legs",
+            "Type": "Legs"
+          }
+        ],
+        "Pull": [
+          {
+            "Exercise": "Pull-ups",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Back",
+            "Type": "Pull"
+          },
+          {
+            "Exercise": "Chin-ups",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Biceps",
+            "Type": "Pull"
+          },
+          {
+            "Exercise": "Bicep Curls",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Biceps",
+            "Type": "Pull"
+          },
+          {
+            "Exercise": "Incline Push-up",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Shoulder",
+            "Type": "Push"
+          },
+          {
+            "Exercise": "Barbell Squats",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Legs",
+            "Type": "Legs"
+          },
+          {
+            "Exercise": "Leg Raises",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Abdomen",
+            "Type": "Legs"
+          }
+        ],
+        "Cardio": [
+          {
+            "Exercise": "Laps",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Full-Body",
+            "Type": "Cardio"
+          },
+          {
+            "Exercise": "Leg raises",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Abdomen",
+            "Type": "Core"
+          },
+          {
+            "Exercise": "Skips",
+            "Rep": 5,
+            "Set": 5,
+            "Target": "Full-Body",
+            "Type": "Cardio"
+          }
+        ],
+        "Rest": [
+          {
+            "Exercise": "None",
+            "Rep": 0,
+            "Set": 0,
+            "Target": "Full-Body",
+            "Type": "Rest"
+          }
+        ]
       }
-    ]
-  },
-  {
-    "days": [
-      "WED",
-      "THU",
-      "SUN"
-    ],
-    "exercises": [
-      {
-        "name": "Incline Push-up",
-        "reps": 10,
-        "sets": 5
-      },
-      {
-        "name": "Barbell Squats",
-        "reps": 15,
-        "sets": 3
-      },
-      {
-        "name": "Bicep Curls",
-        "reps": 10,
-        "sets": 3
-      }
-    ]
+    }
   }
 ]

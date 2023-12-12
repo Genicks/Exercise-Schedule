@@ -12,6 +12,7 @@ function App() {
     const getData = async () => {
       try {
         const req = await fetch("https://exercise-data.onrender.com/");
+        // const req = await fetch("http://localhost:4000");
         const data = await req.json();
         setData(data);
       } catch (err) {

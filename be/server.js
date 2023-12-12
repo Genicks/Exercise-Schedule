@@ -9,7 +9,7 @@ app.use(cors());
 // *Read json data from files
 const readFile = () => {
   return new Promise((resolve, reject) => {
-    fs.readFile("./data.json", "utf8", (err, jdata) => {
+    fs.readFile("../Update/data.json", "utf8", (err, jdata) => {
       if (err) {
         console.error("Error reading the file:", err);
         reject(err);
@@ -39,25 +39,43 @@ const writeFiles = (data) => {
 const DayWorkout = async (day) => {
   try {
     const data = await readFile();
-    const daychosen = day;
-    let finalRoutine;
-    let rest = true;
+    const weekSchedule = await data[0].schedule.days;
+    const dayChosen = day;
+    let dayRoutine;
 
-    data.map((routine, index) => {
-      routine.days.map((day) => {
-        if (daychosen === day) {
-          finalRoutine = routine.exercises;
-          rest = false;
+    weekSchedule.map((day, index) => {
+      if (day.Name == dayChosen) {
+        const category = day.activity;
+        if (category) {
+          dayRoutine = data[0].schedule.categories[category];
         } else {
-          rest ? (finalRoutine = { workout: "rest" }) : null;
+          dayRoutine = data[0].schedule.categories.Rest;
         }
-      });
+      } else {
+        console.log({ day: "Not Found" });
+      }
     });
-    return finalRoutine;
+    return dayRoutine;
   } catch (error) {
     console.log(error);
   }
 };
+
+// !Test for the server
+const log = async () => {
+  // console.log(await readFile());
+  // console.log(await DayWorkout("MON"))
+};
+log();
+
+// console.log(writeFiles(data));
+// const test = async (day) => {
+//   console.log(await DayWorkout(day))
+// }
+// test("SAT")
+// !------------------
+
+//! Routes for Server
 
 // *Send all data to the origin at localhost:4000
 app.get("/", async (req, res) => {
@@ -92,17 +110,6 @@ app.get("/:id", async (req, res) => {
   }
 });
 
-
 app.listen(4000, () => {
   console.log("Server is running on port 4000");
 });
-
-// !Test for the server
-const log = async () => {
-  // console.log(await readFile());
-  // console.log(await DayWorkout("MON"))
-};
-log();
-
-// console.log(writeFiles(data));
-// !------------------

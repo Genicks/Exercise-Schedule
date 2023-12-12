@@ -14,8 +14,10 @@ const Sun = (props) => {
     const getData = async () => {
       try {
         const req = await fetch(`https://exercise-data.onrender.com/${day_Abb}`);
+        // const req = await fetch(`http://localhost:4000/${day_Abb}`);
         const data = await req.json();
-        if (data.workout === "rest") {
+        // console.log(data[0])
+        if (data[0].Type === "Rest") {
           setRest(true);
         } else {
           setWorkout(data);
@@ -29,16 +31,16 @@ const Sun = (props) => {
 
   return (
     <div className="Days">
-      <h1>{today}</h1>
+      <h1>{today}  Day</h1>
       <div className="Workout">
         {!rest
           ? workout.map((exercise, index) => (
               <div key={index} className="Exercise">
                 <div>
-                  <h3>{exercise.name}</h3>
+                  <h3>{exercise.Exercise}</h3>
                   <div>
                     <h5>
-                      Reps: {exercise.reps} Sets: {exercise.sets}
+                      Reps: {exercise.Rep} Sets: {exercise.Set}
                     </h5>
                   </div>
                 </div>
