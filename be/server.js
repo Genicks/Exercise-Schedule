@@ -9,13 +9,13 @@ app.use(cors());
 // *Read json data from files
 const readFile = () => {
   return new Promise((resolve, reject) => {
-    fs.readFile("./data.json", "utf8", (err, jdata) => {
+    fs.readFile("./data.json", "utf8", (err, data) => {
       if (err) {
         console.error("Error reading the file:", err);
         reject(err);
         return;
       }
-      const parsedData = JSON.parse(jdata);
+      const parsedData = JSON.parse(data);
       resolve(parsedData);
     });
   });
@@ -24,9 +24,9 @@ const readFile = () => {
 // *Write to json data base
 const writeFiles = (data) => {
   return new Promise(async (resolve, reject) => {
-    const formatedData = JSON.stringify(data, null, 2);
+    const formattedData = JSON.stringify(data, null, 2);
     try {
-      fs.writeFile("./Data.json", formatedData, "utf-8", () => {});
+      fs.writeFile("./Data.json", formattedData, "utf-8", () => {});
       resolve("File has been written successfully!");
     } catch (error) {
       console.error(error);
@@ -91,9 +91,9 @@ app.get("/", async (req, res) => {
 app.post("/config", async (req, res) => {
   try {
     const data = req.body;
-    const finaldata = JSON.parse(data.textAreaContent);
-    await writeFiles(finaldata);
-    res.send("sucess");
+    const finalData = JSON.parse(data.textAreaContent);
+    await writeFiles(finalData);
+    res.send("success");
   } catch (error) {
     console.log(error);
   }

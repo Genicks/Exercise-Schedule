@@ -13,7 +13,6 @@
 .Days h1 {
   text-align: center;
   width: 100%;
-  min-width: 400px;
 }
 
 .Days Img {
@@ -23,7 +22,8 @@
 
 .Exercise {
   display: flex;
-  background-color: #232D3F;
+  /* background-color: #232D3F; */
+  background-color: rgb(31, 31, 31);
   width: 90%;
   justify-content: space-between;
   padding: 0 10%;

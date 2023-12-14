@@ -31,7 +31,7 @@ const Sun = (props) => {
 
   return (
     <div className="Days">
-      <h1>{today}  Day</h1>
+      <h1>{today}</h1>
       <div className="Workout">
         {!rest
           ? workout.map((exercise, index) => (
@@ -49,7 +49,6 @@ const Sun = (props) => {
             ))
           : 
           <div>
-            <h1>REST DAY</h1>
             <img src={Img} alt="rest" />
           </div>
           }
