@@ -26,7 +26,7 @@ const writeFiles = (data) => {
   return new Promise(async (resolve, reject) => {
     const formattedData = JSON.stringify(data, null, 2);
     try {
-      fs.writeFile("./Data.json", formattedData, "utf-8", () => {});
+      fs.writeFile("./data.json", formattedData, "utf-8", () => {});
       resolve("File has been written successfully!");
     } catch (error) {
       console.error(error);
@@ -92,8 +92,9 @@ app.post("/config", async (req, res) => {
   try {
     const data = req.body;
     const finalData = JSON.parse(data.textAreaContent);
-    await writeFiles(finalData);
-    res.send({data});
+    await writeFiles(finalData).then(() => {
+      res.send({ data });
+    });
   } catch (error) {
     console.log(error);
   }
