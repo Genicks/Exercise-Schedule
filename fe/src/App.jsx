@@ -1,6 +1,6 @@
 import "./styles/App.css";
 import React, { useEffect, useState } from "react";
-import Nav from "./components/Nav.jsx"
+// import Nav from "components/Nav.jsx"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Day from "./components/Day.jsx";
 import Config from "./components/configRoute/Config.jsx"
