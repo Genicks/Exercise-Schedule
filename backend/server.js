@@ -93,7 +93,7 @@ app.post("/config", async (req, res) => {
     const data = req.body;
     const finalData = JSON.parse(data.textAreaContent);
     await writeFiles(finalData);
-    res.send("success");
+    res.send({data});
   } catch (error) {
     console.log(error);
   }
