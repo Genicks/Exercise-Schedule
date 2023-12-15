@@ -1,15 +1,36 @@
 [
   {
     "schedule": {
-        "days": [
-            { "Name": "SUN", "activity": "Rest" },
-            { "Name": "MON", "activity": "Cardio" },
-            { "Name": "TUE", "activity": "Push" },
-            { "Name": "WED", "activity": "Full-body" },
-            { "Name": "THU", "activity": "Pull" },
-            { "Name": "FRI", "activity": "Cardio" },
-            { "Name": "SAT", "activity": "" }
-          ],
+      "days": [
+        {
+          "Name": "SUN",
+          "activity": "Rest"
+        },
+        {
+          "Name": "MON",
+          "activity": "Cardio"
+        },
+        {
+          "Name": "TUE",
+          "activity": "Push"
+        },
+        {
+          "Name": "WED",
+          "activity": "Full-body"
+        },
+        {
+          "Name": "THU",
+          "activity": "Pull"
+        },
+        {
+          "Name": "FRI",
+          "activity": "Cardio"
+        },
+        {
+          "Name": "SAT",
+          "activity": ""
+        }
+      ],
       "categories": {
         "Full-body": [
           {

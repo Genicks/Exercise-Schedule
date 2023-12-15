@@ -13,7 +13,7 @@ const Sun = (props) => {
     const getData = async () => {
       try {
         const req = await fetch(`https://exercise-data.onrender.com/${day_Abb}`);
-        // const req = await fetch(`http://localhost:4000/${day_Abb}`);
+        // const req = await fetch(`http://192.168.18.40:4000/${day_Abb}`);
         const data = await req.json();
         // console.log(data[0])
         if (data[0].Type === "Rest") {
