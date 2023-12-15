@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "./styles/nav.css";
 
 function Nav(props) {
 const { day } = props

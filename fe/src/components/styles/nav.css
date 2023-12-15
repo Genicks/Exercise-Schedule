@@ -1,0 +1,29 @@
+.Nav {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(236, 91, 37);
+}
+
+.Nav a {
+  /* background-color: #232D3F; */
+  /* background-color:  rgb(24, 24, 24); */
+  padding: 10px;
+  border-radius: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+}
+
+#Today {
+  background-color: rgb(185, 71, 29);
+}
+
+#Normal, #Today {
+  width: 100%;
+  border: none;
+  border-right: 1px solid rgb(31, 31, 31);
+}

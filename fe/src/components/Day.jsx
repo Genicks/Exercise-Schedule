@@ -1,5 +1,4 @@
-import Img from "../Img/rest.png";
-import "./Comp.css";
+import "./styles/days.css";
 import React from "react";
 import { useState, useEffect } from "react";
 
@@ -49,7 +48,8 @@ const Sun = (props) => {
             ))
           : 
           <div>
-            <img src={Img} alt="rest" />
+            <br />
+            <h1>Today is a rest day or active recovery.</h1>
           </div>
           }
       </div>

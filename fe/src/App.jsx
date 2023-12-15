@@ -1,9 +1,9 @@
-import "./App.css";
+import "./styles/App.css";
 import React, { useEffect, useState } from "react";
-import Nav from "./components/nav";
+import Nav from "./components/Nav.jsx"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Day from "./components/Day";
-import Config from "./components/Config";
+import Day from "./components/Day.jsx";
+import Config from "./components/configRoute/Config.jsx"
 
 function App() {
   const [data, setData] = useState([]);
@@ -52,11 +52,11 @@ function App() {
             <Route path="/config" element={<Config data={data} />} />
           </Routes>
         </Router>
-      <div className="ConfigBtnCon">
-        <a className="ConfigBtn" href="/config">
-          Config
-        </a>
-      </div>
+        <div className="ConfigBtnCon">
+          <a className="ConfigBtn" href="/config">
+            Config
+          </a>
+        </div>
       </div>
     </div>
   );
