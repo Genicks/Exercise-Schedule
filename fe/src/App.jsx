@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <div className="UI">
-        <Nav day={day} />
+        {/* <Nav day={day} /> */}
         <Router>
           <Routes>
             <Route path="/" element={days[day]} />
