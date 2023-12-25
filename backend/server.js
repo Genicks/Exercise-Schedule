@@ -91,7 +91,7 @@ app.get("/", async (req, res) => {
 app.post("/config", async (req, res) => {
   try {
     const data = req.body;
-    const finalData = JSON.parse(data.textAreaContent);
+    const finalData = JSON.parse(data.Update);
     await writeFiles(finalData).then(() => {
       res.send({ data });
     });
